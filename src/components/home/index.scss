@@ -1,0 +1,71 @@
+.home-page{
+    .text-zone{
+        position:absolute;
+        left:10%;
+        top:50%;
+        transform: translateY(-50%);
+        width:40%;
+        max-height: 90%;
+    }
+    h1{
+        color:white;
+        font-size: 53px;
+        margin:0;
+        font-family:'Teko', sans-serif;
+        font-weight:400;
+
+        &::before{
+            content:'<h1>';
+            font-family: 'Dancing Script', cursive;
+            color: #fc8955;
+            font-size:18px;
+            position:absolute;
+            margin-top: -40px;
+            left:15px;
+            opacity:0.6;
+        }
+
+        &::after{
+            content:'</h1>';
+            font-family: 'Dancing Script', cursive;
+            color: #fc8955;
+            font-size:20px;
+            position:absolute;
+            margin-top: 20px;
+            margin-left:20px;
+            animation: fadeIn 1.7s backwards; //delay 1.7
+            opacity:0.5;
+        }
+
+        img{
+            width:35px;
+            margin-left: 25px;
+            opacity:0;
+            height:auto;
+            animation:rotateIn 1s linear both;
+            animation-delay:1.4s;
+        }
+    }
+
+    h2{ //my title or position (student)
+        color:white;
+        margin-top: 15px;
+        font-weight:400;
+        font-size:20px;
+        font-family: 'Teko', sans-serif;
+        animation:fadeIn 1s 1.7s backwards; //1s long 1.7s delay
+    }
+
+    .flat-button{
+        color:#fc8955;
+        font-size: 15px;
+        letter-spacing:3px;
+        font-family: 'Dancing Script', cursive;
+        text-decoration:none; //not to be underlined as a link
+        padding:15px 20px;
+        border:1px solid #fc8955;
+        margin-top: 30px;
+        float:left;
+        animation: fadeIn 1s 1.7s backwards;
+    }
+}

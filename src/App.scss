@@ -1,0 +1,22 @@
+$primary-color: #ffd700;
+
+@import 'animate.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+//font-family: 'Roboto Slab', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+//font-family: 'Dancing Script', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+//font-family: 'Teko', sans-serif;
+
+/*.selector {
+  font-family: $font-roboto-slab;
+  // Other styling properties 
+}*/
+
+input,
+textarea{
+    font-family: 'Roboto Slab', sans-serif;
+}

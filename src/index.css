@@ -1,0 +1,12 @@
+html{
+  font-size: 60%;
+}
+
+body {
+  margin: 0;
+  font-family: 250 12px/1.4 'Roboto Slab', 'sans-serif';
+  color: #444;
+  background: #022c43;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

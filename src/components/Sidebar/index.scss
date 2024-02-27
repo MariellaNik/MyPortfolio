@@ -1,0 +1,96 @@
+.nav-bar{
+    background: #181818;
+    width:60px;
+    height:100%;
+    position: absolute;
+    top:0;
+    z-index:3;
+    min-height:500px; //to be seen good on smaller screens as well
+
+
+.logo{
+    display:block;
+    padding: 8px 0;
+
+    img{
+        display:block;
+        margin: 8px auto; //to be centered
+        width:24px;
+        height:auto;
+
+        &.sub-logo{
+            width:50px;
+        }
+    }
+}
+
+nav{
+    display: block;
+    text-align:center;
+    position:absolute;
+    height:20px;
+    top:50%;
+    margin-top:-100px;
+    width:100%;
+
+    a{
+        font-size:30px;
+        color:#4d4d4e;
+        display:block;
+        line-height:50px;
+        height:50px;
+        position:relative;
+
+        i{
+            transition: all 0.5s ease-out;
+        }
+
+        &:hover{
+            color:#fc8955;
+
+            svg{
+                opacity:0; //disappear on hover
+            }
+
+            &:after{
+                opacity:1; //to see the text when icons disappear
+            }
+        }
+        &:after{
+            content:"";
+            font-size: 10px;
+            position:absolute;
+            bottom:0;
+            display:block;
+            width:100%;
+            text-align:center;
+            opacity:0; 
+            transition: all 0.5s ease-out;//to have smooth transition same as before
+        }
+
+        &:first-child{
+            &::after{ //on hover to appear text 
+                content:"HOME"
+            }
+        }
+    }
+    //for the rest of the links to have the same I used their class names
+    a.about-link{
+        &:after{ //on hover to appear text 
+            content:"ABOUT";
+        }
+    }
+
+    a.contact-link{
+        &:after{ //on hover to appear text 
+            content:"CONTACT";
+        }
+    }
+
+    a.active{
+        svg{ //paint the active svg 
+            color:#fc8955;
+        }
+    }
+}
+}
