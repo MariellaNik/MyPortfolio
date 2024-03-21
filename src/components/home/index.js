@@ -15,7 +15,7 @@ const Home =() => {
                 <img src={LogoTitle} alt="developer"/>
                  ariela,
                 <br/>
-                a web development enthusiast!
+                a junior web developer!
                 </h1>
                 <h2>Frontend Developer / Junior Student</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link> {/*link button*/}
